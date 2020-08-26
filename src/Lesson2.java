@@ -3,40 +3,89 @@ import java.math.BigDecimal;
 public class Lesson2 {
 
     public static void main(String[] args) {
-        exercise1();
-        exercise2(4);
-        exercise3(2, 5);
+        //  exercise1();
+        //  exercise2(4);
+        // exercise3(3, 3);
         fibonacci(5);
         exercise5();
     }
-
+/*
     public static void exercise1() {
-        // TODO loo 10 elemendile täisarvude massiv
-        // TODO loe sisse konsoolist 10 täisarvu
-        // TODO trüki arvud välja vastupidises järiekorras
+        int[] a = new int[10];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Sisesta 10 täisarvu");
+        for (int i = 1; i < 10; i++) {
+            a[i] = scanner.nextInt();
+        }
+        for (int i = 9; i > 0; i--) {
+            System.out.println(a[i]);
+        }
     }
+    // TODO loo 10 elemendile täisarvude massiv
+    // TODO loe sisse konsoolist 10 täisarvu
+    // TODO trüki arvud välja vastupidises järiekorras
+
 
     public static void exercise2(int x) {
         // TODO prindi välja x esimest paaris arvu
         // Näide:
         // Sisend 5
         // Väljund 2 4 6 8 10
+
+        for( int i = 2; i <= x * 2 ; i += 2) {
+            System.out.println(i + " ");
+        }
+        (int i = 2; i <= x i++) {
+        System.out.print(2* i + " ");
+        }
+
     }
+
 
     public static void exercise3(int x, int y) {
         // TODO trüki välja korrutustabel mis on x ühikut lai ja y ühikut kõrge
         // TODO näiteks x = 3 y = 3
         // TODO väljund
-        // 1 2 3
-        // 2 4 6
-        // 3 6 9
-    }
+        // print ei tee reavahetust, println vahetab rida
 
+
+        for (int i = 1; i <= x; i++) {
+            // 1 2 3
+            // 2 4 6
+            // 3 6 9
+
+            System.out.println("");
+            {
+                for (int j = 1; j <= y; j++) {
+                    System.out.print(i * j + " ");
+                }
+            }
+        }
+    }
+*/
     public static int fibonacci(int n) {
         // TODO
         // Fibonacci jada on fib(n) = fib(n-1) + fib(n-2);
         // 0, 1, 1, 2, 3, 5, 8, 13, 21
         // Tagasta fibonacci jada n element
+        int f1 = 0;
+        int f2 = 1;
+        int f3;
+        int fib0=0;
+        if (n ==0) {
+            System.out.println("Ei saa panna");
+            //else if(n == 1) {
+                
+            //}
+        }
+        System.out.print(f1 + " " + f2);;
+        //int f3;
+        for(int i=2; i<n; i++) {
+            f3 = f1 + f2;
+            f1 = f2;
+            f2 = f3;
+        }
+
         return 0;
     }
 
