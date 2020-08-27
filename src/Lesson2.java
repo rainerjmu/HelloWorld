@@ -99,6 +99,8 @@ public class Lesson2 {
             a) sorteerib külastuspäevad külastajate arvu järgi kasvavalt ning prindib tulemuse konsoolile;
             b) prindib konsoolile päeva, mil külastajaid oli kõige rohkem.
             Faili asukoht tuleb programmile ette anda käsurea parameetrina.
+
+            //päriselt raske
          */
     }
 
@@ -120,12 +122,15 @@ public class Lesson2 {
         VASTUS:
         Õige summa: 77378062799264987173249634924670947389130820063105651135266574
          */
+        //päriselt raske
     }
 
     public static void exercise9() {
         /* TODO
         Sama mis eelmises ülesandes aga ära kasuta BigInt ega BigDecimal klassi
          */
+
+        //päriselt raske
     }
 
 }
