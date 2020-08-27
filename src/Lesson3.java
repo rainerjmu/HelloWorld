@@ -1,6 +1,11 @@
+import java.util.Arrays;
+
 public class Lesson3 {
 
     public static void main(String[] args) {
+
+        //3n+1 välja kutsumine. Kui on paaris /2 kui paaritu *3+1. Andes ette 5 kutsume välja kuni return oleks 6
+
         System.out.println(sum(10, 20));
         // int[] x = new int [4];
         int[] x = {10, 20, 30, 40};
@@ -9,8 +14,10 @@ public class Lesson3 {
         System.out.println(factorial(4));
         System.out.println(alg(7));
 
-        int a[] = {2, 6, 8, 4};
-        //System.out.println(Arrays.toString(sort(a));
+        int[] a = {2, 6, 8, 4};
+        System.out.println(Arrays.toString(sort(a)));
+
+        // System.out.println()
 
     }
 
@@ -25,6 +32,36 @@ public class Lesson3 {
         }
     }
 
+    //funktsioon
+    //tsükkel
+    //kutsuge välja algne funktsioon
+    //tsüklist väljas defineerite uue muutuja
+    // võrdsustate funktsiooni väljakutsuja tulemuses
+    // annate ette tulemuse
+    // vaatate et tsükkel töötaks kuni tulemuseni 1
+
+    private static int ylesanne(int t) {           //sulgudesse muutuja
+        int u = 1;
+        while (t > 1) {
+            t = alg(t);
+            u = u + 1;
+        }
+
+        return u;
+
+        //uus funktsioon kus kutsume välja eelmist funktsiooni (ylesanne)
+        //
+
+    }
+    public static int viies(int a, int b){
+        //tsükkel a'st b'ni ja tsükklis kutsud välja eelnevat funktsiooni
+        //tagastad kõige suurema
+        //a la 5 tagastab 6, 7 midagi jn
+        //näide. a+1 a+2 jne kuni b
+
+
+        return 0;
+    }
 
     public static int sum(int x, int y) {
         // TODO liida kokku ja tagasta x ja y väärtus
@@ -62,18 +99,18 @@ public class Lesson3 {
         // TODO sorteeri massiiv suuruse järgi
         // Näiteks {2, 6, 8, 1}
         // Väljund {1, 2, 6, 8}
-        int a[] = new int[a.length]
-                int temp;
-        for (int i = 0; i < a.length; i++)
-        {
+        //int a[] = int int[a.length];
+        int uus;
+        for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {
-                if (a[i] > a[j])
-                {
-                    temp = a[i];
+                if (a[i] > a[j]) {
+                    uus = a[i];
                     a[i] = a[j];
-                    a[j] = temp;
+                    a[j] = uus;
 
-
+                }
+            }
+        }
         return a;
     }
 
@@ -83,25 +120,22 @@ public class Lesson3 {
         // a = "Test";
         // return tseT";
 
-                String a = "Test";
-                for(int i=a.length()-1;i>=0;i--) {
+        //String
+        a = "Test";
+        char[] katse1 = a.toCharArray();
+        for (int i = a.length() - 1; i >= 0; i--) {
 
-                }
-
-
-
+        }
         return "";
     }
 
     public static boolean isPrime(int h) {
         // TODO tagasta kas sisestatud arv on primaar arv (jagub ainult 1 ja iseendaga)
         if (h % 2 == 0) return true;
-        for (int i = 3; i * i < h; i += 2)
+        for (int i = 3; i * i < h; i += 2) {
             if (h % i == 0) return true;
+
         return false;
-
-
-        //return false;
 
     }
 
